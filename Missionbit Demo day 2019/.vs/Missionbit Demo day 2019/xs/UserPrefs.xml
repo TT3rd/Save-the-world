@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{CB2112E5-E49E-1769-7DA0-3D861216E787}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Player/Scripts/playermovement.cs">
+    <Files>
+      <File FileName="Assets/Player/Enemy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Tiles/stuff/weapon.cs" Line="1" Column="1" />
+      <File FileName="Assets/Enemies/PlayerFollow.cs" Line="12" Column="6" />
+      <File FileName="Assets/Enemies/FollowPlayer.cs" Line="2" Column="1" />
+      <File FileName="Assets/Player/Scripts/playermovement.cs" Line="36" Column="53" />
+      <File FileName="Assets/SmoothCamera2D.cs" Line="16" Column="40" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
