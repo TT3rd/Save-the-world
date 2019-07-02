@@ -9,6 +9,8 @@ public class playermovement : MonoBehaviour
     public float runspeed = 40f;
     bool jump = false;
     Animator anim;
+    bool inair = false;
+    public bool isGrounded;
     //bool crouch = false;
     void Start()
     {
@@ -17,40 +19,30 @@ public class playermovement : MonoBehaviour
 
     void Update()
     {
+
         horizantialMove = Input.GetAxisRaw("Horizontal") * runspeed;
-        if ((Input.GetKeyDown("w") || Input.GetKeyDown("up")))
+        if (isGrounded = true && Input.GetButtonDown("Jump") || Input.GetKeyDown("up") )
         {
             jump = true;
+            anim.Play("Jump");
+
         }
-        //if(Input.GetKeyDown("s")){
-        //    crouch = true;
-        //}
-        //if(Input.GetKeyUp("s"))
-        //{
-        //    crouch = false;
-        //}
-        if(Input.GetAxis("Horizontal") > 0  || Input.GetAxis("Horizontal")<0){
+
+
+
+
+        if (Input.GetAxis("Horizontal") > 0 || Input.GetAxis("Horizontal") < 0)
+        {
             anim.SetBool("IsRun", true);
         }
-        else{
+        else
+        {
             anim.SetBool("IsRun", false);
 
         }
 
-        //if (Input.GetKeyDown("a") || Input.GetKeyDown("s") || Input.GetKeyDown("left")|| Input.GetKeyDown("right"))
-        //{
-        //    anim.SetBool("IsRun", true);
-        //}
-
-        //else{
-        //    anim.SetBool("IsRun", false);
-
-        //}
-
-
-
-
     }
+   
     void FixedUpdate()
     {
         controller.Move(horizantialMove * Time.fixedDeltaTime, false, jump);
