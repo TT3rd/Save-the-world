@@ -1,7 +1,7 @@
 # Save-the-world
 
-## Story:
+## Story: Stickman saving the world from monsters
 
 ## Characters:
 
-## Gameplay:
+## Gameplay: 2D Sidescrolling Platformer
